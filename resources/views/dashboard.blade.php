@@ -3,27 +3,27 @@
         <div class="container px-4 px-lg-5 h-100">
             <div class="row gx-4 gx-lg-5 h-100 align-items-star justify-content-star text-star">
                 <div class="col-lg-8 align-self-end">
-                    <h1 class="text-dark fw-bold">Cuci dan Salon Mobil <br>Panggilan Profesional</h1><br>
+                    <h1 class="text-dark fw-bold"><span id="auto-type"></span></h1><br>
                 </div>
                 <div class="col-lg-6 align-self-baseline">
                     <p class="text-dark-75 mb-5">Tunggu di rumah saja, jasa cuci dan salon mobil panggilan kami siap membersihkan mobil Anda kapanpun dibutuhkan.</p>
-                    <a class="btn btn-lg  text-white" style="background-color: #f4623a" href="#about">Pelajari Lebih Lanjut</a>
+                    <a class="btn btn-lg  text-white" style="background-color: #f4623a" href="#about">Pelajari Lebih Lanjut <i class="fa-regular fa-circle-question fa-shake"></i></a>
                 </div>
             </div>
         </div>
     </header>
 
     <!-- Services-->
-    <section class="page-section" id="services">
+    <section class="page-section" id="services" >
         <div class="container px-4 px-lg-5">
             <div class="row d-flex justify-content-center">
                 <div class="col-md-8">
-                        <h2 class="text-center mt-0 d-flex justify-content-center">Sekarang, cuci mobil di rumah lebih mudah dengan layanan berlangganan dari MobilClean</h2>
+                        <h2 class="text-center mt-0 d-flex justify-content-center "data-aos="fade-right" data-aos-duration="600">Sekarang, cuci mobil di rumah lebih mudah dengan layanan berlangganan dari MobilClean</h2>
                         <hr class="divider" />
-                    <img src="../img/mobil-cling.jpg" alt="">
+                    <img src="../img/mobil-cling.jpg" alt="" data-aos="fade-left" data-aos-duration="600">
                 </div>
             </div>
-            <div class="row gx-4 gx-lg-5">
+            <div class="row gx-4 gx-lg-5" data-aos="fade-up" >
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
                         <div class="mb-2"><img style="width: 50px" src="../img/icont/ico-protection.png" alt=""></div>
@@ -31,21 +31,21 @@
                         <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="200">
                     <div class="mt-5">
                         <div class="mb-2"><img style="width: 50px" src="../img/icont/ico-water.png" alt=""></div>
                         <h3 class="h4 mb-2">Shampo / Sabun Premium</h3>
                         <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-3 col-md-6 text-center"data-aos="fade-up"data-aos-delay="400">
                     <div class="mt-5">
                         <div class="mb-2"><img style="width: 50px" src="../img/icont/ico-fast.png" alt=""></div>
                         <h3 class="h4 mb-2">Cepat Tanpa Repot Antri</h3>
                         <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-3 col-md-6 text-center"data-aos="fade-up"data-aos-delay="600">
                     <div class="mt-5">
                         <div class="mb-2"><img style="width: 50px" src="../img/icont/ico-cal.png" alt=""></div>
                         <h3 class="h4 mb-2">Bebas Atur Jadwal   </h3>
@@ -61,64 +61,64 @@
     <section>
             <div id="portfolio">
                 <div class="container ">
-                <div class="container-fluid ">
+                <div class="container-fluid  ">
                     <div class="row">
                         <div class="col text-center" style="margin-bottom: 3rem">
-                            <h1>Portfolio </h1>
+                            <h1 data-aos="zoom-in">Portfolio Section</h1>
                         </div>
                     </div>
-                    <div class="row g-0">
-                        <div class="col-lg-4 col-sm-6">
-                            <a class="portfolio-box" href=../img/portfolio/fullsize/1.jpg" title="Project Name">
+                    <div class="row ">
+                        <div class="col-lg-4 col-sm-6 pb-4"data-aos-duration="600"data-aos="zoom-in" >
+                            <a class="portfolio-box " href=../img/portfolio/fullsize/1.jpg title="Cuci Mobil">
                                 <img class="img-fluid" src="../img/portfolio/thumbnails/1.jpg" alt="..." />
                                 <div class="portfolio-box-caption">
                                     <div class="project-category text-white-50">Category</div>
-                                    <div class="project-name">Project Name</div>
+                                    <div class="project-name">Cuci Mobil</div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <a class="portfolio-box" href="../img/portfolio/fullsize/2.jpg" title="Project Name">
+                        <div class="col-lg-4 col-sm-6"data-aos="zoom-in"data-aos-duration="600"data-aos-delay="200">
+                            <a class="portfolio-box" href="../img/portfolio/fullsize/2.jpg" title="Salon Mobil Eksterior">
                                 <img class="img-fluid" src="../img/portfolio/thumbnails/2.jpg" alt="..." />
                                 <div class="portfolio-box-caption">
                                     <div class="project-category text-white-50">Category</div>
-                                    <div class="project-name">Project Name</div>
+                                    <div class="project-name">Salon Mobil Eksterior</div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <a class="portfolio-box" href="../img/portfolio/fullsize/3.jpg" title="Project Name">
+                        <div class="col-lg-4 col-sm-6"data-aos="zoom-in"data-aos-duration="600"data-aos-delay="300">
+                            <a class="portfolio-box" href="../img/portfolio/fullsize/3.jpg" title="Salon Mobil Interior">
                                 <img class="img-fluid" src="../img/portfolio/thumbnails/3.jpg" alt="..." />
                                 <div class="portfolio-box-caption">
                                     <div class="project-category text-white-50">Category</div>
-                                    <div class="project-name">Project Name</div>
+                                    <div class="project-name">Salon Mobil Interior</div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <a class="portfolio-box" href="../img/portfolio/fullsize/4.jpg" title="Project Name">
+                        <div class="col-lg-4 col-sm-6"data-aos="zoom-in"data-aos-duration="600"data-aos-delay="400">
+                            <a class="portfolio-box" href="../img/portfolio/fullsize/4.jpg" title="Salon Mobil Ban & Velg">
                                 <img class="img-fluid" src="../img/portfolio/thumbnails/4.jpg" alt="..." />
                                 <div class="portfolio-box-caption">
                                     <div class="project-category text-white-50">Category</div>
-                                    <div class="project-name">Project Name</div>
+                                    <div class="project-name">Salon Mobil Ban & Velg</div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <a class="portfolio-box" href="../img/portfolio/fullsize/5.jpg" title="Project Name">
+                        <div class="col-lg-4 col-sm-6"data-aos="zoom-in"data-aos-duration="600"data-aos-delay="500">
+                            <a class="portfolio-box" href="../img/portfolio/fullsize/5.jpg" title="Salon Mobil Kaca">
                                 <img class="img-fluid" src="../img/portfolio/thumbnails/5.jpg" alt="..." />
                                 <div class="portfolio-box-caption">
                                     <div class="project-category text-white-50">Category</div>
-                                    <div class="project-name">Project Name</div>
+                                    <div class="project-name">Salon Mobil Kaca</div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <a class="portfolio-box" href="../img/portfolio/fullsize/6.jpg" title="Project Name">
+                        <div class="col-lg-4 col-sm-6"data-aos="zoom-in" data-aos-duration="600"data-aos-delay="600">
+                            <a class="portfolio-box" href="../img/portfolio/fullsize/6.jpg" title="Salon Mobil Mesin">
                                 <img class="img-fluid" src="../img/portfolio/thumbnails/6.jpg" alt="..." />
                                 <div class="portfolio-box-caption p-3">
                                     <div class="project-category text-white-50">Category</div>
-                                    <div class="project-name">Project Name</div>
+                                    <div class="project-name">Salon Mobil Mesin</div>
                                 </div>
                             </a>
                         </div>
@@ -130,70 +130,78 @@
     <!-- Akhir Portfolio-->   
 
     <!-- About-->
-    <section id="about" class="pt-5 pb-5" style="background-color: #f4623a ;">
-        <div class="container px-4 px-lg-5 ">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg text-center">
-                    <h2 class="text-white mt-0">Paket Cuci Mobil Berlangganan</h2>
-                    <hr class="divider divider-light" />
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-lg-2">
-                            <div class="card mt-3 rounded-5 about-wrapper" >
-                                <div class="card-body " style="background-color: #f8ede7; border-radius:25px; " >
-                                    <h5 class="card-title mb-3 fw-bold">Bronze</h5>
-                                    <p class="card-text">1x cuci / minggu Meguiar's Gold Class Diskon fogging 25%</p>
-                                    <p class="card-text">Harga per bulan</p>
-                                    <h5 class="card-title">Rp.350.000</h5>
+    <section id="about" >
+        <div class="about-overlay">
+            
+            <div class="container  pt-5 pb-5 ">
+                    <div class="row justify-content-center">
+                        <div class="col-lg text-center">
+                            <h2 class="text-white mt-0">Paket Cuci Mobil Berlangganan</h2>
+                            <hr class="divider divider-light" />
+                        </div>
+                            <div class="row d-flex justify-content-center text-center">
+                            
+                                <div class="owl-carousel owl-theme ">
+                                    
+                                    <div class="item ">
+                                        <div class="card mt-3 rounded-5 " data-aos="fade-down" data-aos-duration="400" >
+                                            <div class="card-body " style="background-color: #f8ede7; border-radius:25px; " >
+                                                <h5 class="card-title mb-3 fw-bold">Bronze</h5>
+                                                <p class="card-text">1x cuci / minggu Meguiar's Gold Class Diskon fogging 25%</p>
+                                                <p class="card-text">Harga per bulan</p>
+                                                <h5 class="card-title">Rp.350.000</h5>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="item ">
+                                        <div class="card mt-3 rounded-5 "data-aos="fade-down" data-aos-duration="400" data-aos-delay="200">
+                                            <div class="card-body " style="background-color:#f7f7f7; border-radius:25px;">
+                                                <h5 class="card-title mb-3 fw-bold">Silver</h5>
+                                                <p class="card-text">2x cuci / minggu Meguiar's Gold Class Diskon fogging 25%</p>
+                                                <p class="card-text">Harga per Bulan</p>
+                                                <h5 class="card-title">Rp.500.000</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="card mt-3 rounded-5 "data-aos="fade-down" data-aos-duration="400"data-aos-delay="300">
+                                            <div class="card-body" style="background-color:#f9f3e7; border-radius:25px;">
+                                                <h5 class="card-title mb-3 fw-bold">Gold</h5>
+                                                <p class="card-text">z3x cuci / minggu Meguiar's Gold Class Diskon fogging 25%</p>
+                                                <p class="card-text">Harga per bulan</p>
+                                                <h5 class="card-title">Rp.650.000</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="card mt-3 rounded-5 "data-aos="fade-down"data-aos-duration="400"data-aos-delay="400">
+                                            <div class="card-body" style="background-color:#d5eef8; border-radius:25px;">
+                                                <h5 class="card-title mb-3 fw-bold">Daimond</h5>
+                                                <p class="card-text">3x cuci / minggu Meguiar's Hyper Wash Diskon fogging 50%</p>
+                                                <p class="card-text">Harga per bulan</p>
+                                                <h5 class="card-title">Rp.800.000</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item ">
+                                            <div  class="card card-body mt-3 text-warning "  style="background-color:#333333; border-radius:25px;" data-aos="fade-down" data-aos-duration="400"data-aos-delay="600">
+                                                <h5 class="card-title mb-3 fw-bold">Ultimate</h5>
+                                                <p class="card-text">6x cuci / minggu Meguiar's Hyper Wash Diskon fogging 75%</p>
+                                                <p class="card-text">Harga per bulan</p>
+                                                <h5 class="card-title">Rp.1.500.000</h5>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row text-center">
+                                <div class="col">
+                                    <div class="btn btn-warning mt-5 btn-lg "> Pesan Sekarang !</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2">
-                            <div class="card mt-3 rounded-5 about-wrapper">
-                                <div class="card-body " style="background-color:#f7f7f7; border-radius:25px;">
-                                    <h5 class="card-title mb-3 fw-bold">Silver</h5>
-                                    <p class="card-text">2x cuci / minggu Meguiar's Gold Class Diskon fogging 25%</p>
-                                    <p class="card-text">Harga per Bulan</p>
-                                    <h5 class="card-title">Rp.500.000</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="card mt-3 rounded-5 about-wrapper">
-                                <div class="card-body" style="background-color: #f9f3e7; border-radius:25px;">
-                                    <h5 class="card-title mb-3 fw-bold">Gold</h5>
-                                    <p class="card-text">3x cuci / minggu Meguiar's Gold Class Diskon fogging 25%</p>
-                                    <p class="card-text">Harga per bulan</p>
-                                    <h5 class="card-title">Rp.650.000</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 ">
-                            <div class="card mt-3 rounded-5 about-wrapper">
-                                <div class="card-body" style="background-color:#d5eef8; border-radius:25px;">
-                                    <h5 class="card-title mb-3 fw-bold">Daimond</h5>
-                                    <p class="card-text">3x cuci / minggu Meguiar's Hyper Wash Diskon fogging 50%</p>
-                                    <p class="card-text">Harga per bulan</p>
-                                    <h5 class="card-title">Rp.800.000</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                                <div class="card card-body mt-3 text-warning about-wrapper" style="background-color:#333333; border-radius:25px;">
-                                    <h5 class="card-title mb-3 fw-bold">Ultimate</h5>
-                                    <p class="card-text">6x cuci / minggu Meguiar's Hyper Wash Diskon fogging 75%</p>
-                                    <p class="card-text">Harga per bulan</p>
-                                    <h5 class="card-title">Rp.1.500.000</h5>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="btn btn-warning mt-5 btn-lg about-wrapper"> Pesan Sekarang !</div>
-                        </div>
-                    </div>
                 </div>
-            </div>
         </div>
+       
     </section>
     <!--Akhir About-->
 

@@ -11,13 +11,31 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+.btn-floating{
+  position: fixed;
+  right: 25px;
+  overflow: hidden;
+  z-index: 9999;
+  bottom: 85px;
+  
+}
+
+
 body{
  
     font-family: 'Poppins', sans-serif;;
     
 }
 
-
+#about{
+  background-image: url('../img/about-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-overlay{
+  
+  background-color: #d84113bb;
+}
 
   /* about hovver */
 
@@ -27,9 +45,9 @@ body{
     -ms-transition: all 0.3s ease-out 0s;
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
-    -webkit-box-shadow: 0px 0px 30px rgba(46, 87, 217, 0.45);
-    -moz-box-shadow: 0px 0px 30px rgba(46, 87, 217, 0.45);
-    box-shadow: 0px 0px 30px rgba(46, 87, 217, 0.45); }
+    -webkit-box-shadow: 0px 0px 30px rgb(255, 255, 255);
+    -moz-box-shadow: 0px 0px 30px rgb(255, 255, 255);
+    box-shadow: 0px 0px 30px rgb(255, 255, 255); }
 
     .theme-btn {
       display: inline-block;
@@ -4573,9 +4591,6 @@ body{
       }
     }
 
-#portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl, #portfolio .container-xxl {
-  max-width: 1920px;
-}
 #portfolio .container-fluid .portfolio-box, #portfolio .container-sm .portfolio-box, #portfolio .container-md .portfolio-box, #portfolio .container-lg .portfolio-box, #portfolio .container-xl .portfolio-box, #portfolio .container-xxl .portfolio-box {
   position: relative;
   display: block;
@@ -4585,7 +4600,7 @@ body{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 84%;
+  width: 88%;
   height: 100%;
   position: absolute;
   bottom: 0;

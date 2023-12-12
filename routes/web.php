@@ -14,13 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/index', function () {
-    return view('index');
-});
 Route::get('/form-pendaftaran', function () {
     return view('form');
 })->middleware(['auth', 'verified'])->name('form');
 
+Route::get('/terima-kasih', function () {
+    return view('completeform');
+});
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
