@@ -1,105 +1,108 @@
-<x-app-layout>
-    <section class="page-section" id="contact">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8 col-xl-6 text-center">
-                    <h2 class="mt-0">Let's Get In Touch!</h2>
-                    <hr class="divider" />
-                    <p class="text-muted mb-5">Silahkan Memasukan Data Form Pemesanan Berikut</p>
-                </div>
-            </div>
-            <div class="row gx-4 gx-lg-5 d-flex justify-content-center mb-5">
-                <div class="col-lg-8">
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                        <!-- Name input-->
-                        <div class="row mb-3 ">
-                            <div class="col-sm-6 ">
-                                    <div class=" mb-3">
-                                        <label for="name">Nama Panjang</label>
-                                        <input class="form-control rounded" id="name" type="text" placeholder="Ex*Abdul comoy" data-sb-validations="required" />
-                                        <div class="invalid-feedback" data-sb-feedback="name:required">Anda Belum Menginputkan Nama Anda</div>
-                                    </div>
+@extends('dashboard.layouts.app')
+@section('header')
+    <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+        {{-- Use 'Edit' for edit mode and create for non-edit/create mode --}}
+        {{ isset($reservation) ? 'Edit' : 'Buat Reservasi' }}
+    </h2>
+@endsection
+@section('content')
+    <div class="py-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="p-6 text-gray-900 ">
+
+                    {{-- don't forget to add multipart/form-data so we can accept file in our form --}}
+                    <form method="POST"
+                        action="{{ isset($reservation) ? route('reservations.update', $reservation->id) : route('reservations.store') }}"
+                        class="mt-6 space-y-6" enctype="multipart/form-data" class="mt-6 space-y-6">
+                        @csrf
+                        {{-- add @method('put') for edit mode --}}
+                        @isset($reservation)
+                            @method('put')
+                        @endisset
+                        <div class="grid grid-flow-row-dense grid-cols-2 grid-rows-2 ...">
+                            <div class='m-4 sm:m-2 w-50'>
+                                <x-input-label for="name" value="Nama" />
+                                <x-text-input id="name" name="name" type="text" class="mt-1 block w-full"
+                                    :value="$user->name ?? old('name')" required autofocus />
+                                <x-input-error class="mt-2" :messages="$errors->get('name')" />
                             </div>
-                            <div class="col-sm-6">
-                                    <div class=" mb-3">
-                                        <label for="email">Alamat Email</label>
-                                        <input class="form-control rounded" id="email" type="email" placeholder="Ex*Abdul comoy" data-sb-validations="required" />
-                                        <div class="invalid-feedback" data-sb-feedback="email:required">Anda Belum Menginputkan Email Anda</div>
-                                    </div>
+                            <div class='m-4 sm:m-2 w-50'>
+                                <x-input-label for="email" value="Email" />
+                                <x-text-input id="email" name="email" type="email" class="mt-1 block w-full"
+                                    :value="$user->email ?? old('email')" required autofocus />
+                                <x-input-error class="mt-2" :messages="$errors->get('email')" />
                             </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-sm-6">
-                                <div class=" mb-3">
-                                    <label for="phone">Nomer Handphone</label>
-                                    <input class="form-control rounded" id="phone" type="number" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                    <div class="invalid-feedback" data-sb-feedback="phone:required">Anda Belum Menginputkan Nomor Hp anda</div>
-                                </div>
+                            <div class='m-4 sm:m-2 w-50'>
+                                <x-input-label for="phone" value="No. Hp" />
+                                <x-text-input id="phone" name="phone" type="text" class="mt-1 block w-full"
+                                    :value="$user->phone ?? old('phone')" required autofocus />
+                                <x-input-error class="mt-2" :messages="$errors->get('phone')" />
                             </div>
-                            <div class="col-sm-6">
-                                <div class=" mb-3">
-                                    <label for="phone">Plat Kendaraan</label>
-                                    <input class="form-control rounded" id="phone" type="text" placeholder="N 1231 DDD" data-sb-validations="required" />
-                                    <div class="invalid-feedback" data-sb-feedback="phone:required">Anda Belum Menginputkan Plat Kendaraan anda</div>
-                                </div>
+                            <div class='m-4 sm:m-2 w-50'>
+                                <x-input-label for="address" value="Address" />
+                                <x-text-input id="address" name="address" type="text" class="mt-1 block w-full"
+                                    :value="$user->address ?? old('address')" required autofocus />
+                                <x-input-error class="mt-2" :messages="$errors->get('address')" />
                             </div>
-                        </div>
-                        
-                        <div class="row ">
-                            <div class="col-sm">
-                                <div class="form-groub mb-3">Silahkan Pilih Paket
-                                    <label for="paket-option"></label>
-                                    <select class="form-control" id="paket-option" name="paket_id" required >
-                                        <option value=""></option>
-                                        <option value="Bronze">Bronze</option>
-                                        <option value="sliver">Sliver</option>
-                                        <option value="gold">Gold</option>
-                                        <option value="platinum">Platinum</option>
-                                        <option value="ultimate">Ultimate</option>
-                                    </select>
-                                </div>
+                            <div class='m-4 sm:m-2 w-50'>
+                                <x-input-label for="plate_number" value="Plat Nomor Kendaraan" />
+                                <x-text-input id="plate_number" name="plate_number" type="text" class="mt-1 block w-full"
+                                    :value="$reservation->plate_number ?? old('plate_number')" required autofocus />
+                                <x-input-error class="mt-2" :messages="$errors->get('plate_number')" />
                             </div>
-                        </div>
-                        <div class="row d-flex justify-content-center">
-                            <div class="col">
-                                <div class=" mb-4">
-                                    <label for="tanggal">Plat Kendaraan</label>
-                                    <input class="form-control rounded" id="tanggal" type="date" placeholder="Tanggal Hari ini" data-sb-validations="required" />
-                                    <div class="invalid-feedback" data-sb-feedback="phone:required">Anda Belum Menginputkan Tanggal Pemesanan</div>
-                                </div>
+                            <div class='m-4 sm:m-2 w-50'>
+                                <x-input-label for="product_id" value="Paket Cuci" />
+                                <x-select-input name="product_id" class="mt-1 block w-full">
+                                    <option value=""></option>
+                                    @foreach ($products as $product)
+                                        <option value={{ $product->id }}>
+                                            {{ $product->category . ' - ' . $product->title }}</option>
+                                    @endforeach
+                                </x-select-input>
+                                <x-input-error class="mt-2" :messages="$errors->get('product_id')" />
                             </div>
+                            <div class='m-4 sm:m-2 w-50'>
+                                <x-input-label for="reservation_date" value="Tanggal Reservasi" />
+                                <x-text-input id="reservation_date" name="reservation_date" type="date"
+                                    class="mt-1 block w-full" :value="$reservation->reservation_date ?? old('reservation_date')" required autofocus />
+                                <x-input-error class="mt-2" :messages="$errors->get('reservation_date')" />
+                            </div>
+                            <div class='m-4 sm:m-2 w-50'>
+                                <x-input-label for="reservation_time" value="Jam Kedatangan" />
+                                <x-select-input name="reservation_time" class="mt-1 block w-full">
+                                    <option value=""></option>
+                                    @foreach ($times as $time)
+                                        <option value="{{ $time }}">
+                                            {{ $time }}</option>
+                                    @endforeach
+                                </x-select-input>
+                                <x-input-error class="mt-2" :messages="$errors->get('reservation_time')" />
+                            </div>
+                            <div class='m-4 sm:m-2 w-50'>
+                                <x-input-label for="message" value="Pesan (Opsional)" />
+                                <x-textarea-input id="message" name="message" class="mt-1 block w-full"
+                                    autofocus>{{ $product->message ?? old('message') }}</x-textarea-input>
+                                <x-input-error class="mt-2" :messages="$errors->get('message')" />
+                            </div>
+
                         </div>
-                        <!-- Message input-->
-                        <div class="form-floating mb-3">
-                            <textarea class="form-control rounded" id="pesan" type="text" placeholder="Enter your pesan here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                            <label for="pesan">Pesan</label>
-                            <div class="invalid-feedback" data-sb-feedback="message:required">Anda Belum Menginputkan Pesan</div>
+                        <div class="flex items-center gap-4">
+                            <x-primary-button>{{ __('Submit') }}</x-primary-button>
                         </div>
-                        <!-- Submit success message-->
-                        <!---->
-                        <!-- This is what your users will see when the form-->
-                        <!-- has successfully submitted-->
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center mb-3">
-                                <div class="fw-bolder">Terima kasih , Pesan Anda Telah Dikirm :)</div>
-                                </div>
-                        </div>
-                        <!-- Submit error message-->
-                        <!---->
-                        <!-- This is what your users will see when there is-->
-                        <!-- an error submitting the form-->
-                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                        <!-- Submit Button-->
-                        <div class="d-grid"><button class="btn btn-warning btn-xl disabled" id="submitButton" type="submit">Submit</button></div>
                     </form>
                 </div>
             </div>
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-4 text-center mb-5 mb-lg-0">
-                    <i class="bi-phone fs-2 mb-3 text-muted"></i>
-                    <div>+1 (555) 123-4567</div>
-                </div>
-            </div>
         </div>
-    </section>
-</x-app-layout>
+    </div>
+    <script>
+        // create onchange event listener for image input
+        document.getElementById('image').onchange = function(evt) {
+            const [file] = this.files
+            if (file) {
+                // if there is an image, create a preview in image_preview
+                document.getElementById('image_preview').src = URL.createObjectURL(file)
+            }
+        }
+    </script>
+@endsection
