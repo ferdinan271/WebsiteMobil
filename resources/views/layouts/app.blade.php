@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>{{ config('app.name', 'Mobil Gacor') }}</title>
         {{-- font awesome --}}
@@ -18,16 +14,35 @@
          <link href="css/styles.css" rel="stylesheet" />
          <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Scripts -->
+
+        <link rel="stylesheet" href="{{ asset('css/swal.css') }}">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="{{ asset('js/swal.js') }}"></script>
        
     </head>
     <body>
         <div class="btn btn-success btn-floating">Konsultasi Gratis <i class="fa-solid fa-square-phone fa-beat"></i></div>
             @include('layouts.navigation')
-
+            @if (session('success'))
+        <script>
+            showToast('success', '{{ session('success') }}')
+        </script>
+    @endif
+    @if (session('error'))
+        <script>
+            showToast('error', '{{ session('error') }}')
+        </script>
+    @endif
             <!-- Page Content -->
             <main>
                 {{ $slot }}
             </main>
+
+            <footer class="bg-light py-5">
+                <div class="container px-4 px-lg-5">
+                    <div class="small text-center text-muted">Copyright &copy; 2023 - Kelompok Gacor PTI-A</div>
+                </div>
+            </footer>
         
     </body>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>

@@ -1,57 +1,65 @@
 {{-- Boostrap --}}
 <section>
 
-  <div class="card">
-    <div class="card-header ">
-      Profile Information
-    </div>
-    <div class="card-body">
-      <h5 class="card-title">Update your account's profile information...</h5>
-      <form method="POST" action="{{ route('profile.update') }}">
-    
-        @csrf
-        @method('patch')
-    
-        <div class="mb-3">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" id="name" name="name" value="{{ old('name', $user->name) }}" required>
-          @error('name')
-            <div class="text-danger mt-2">{{ $message }}</div>  
-          @enderror
+    <div class="card">
+        <div class="card-header ">
+            Profile Information
         </div>
-    
-        <div class="mb-3">
-          <label for="email">Email</label>    
-          <input type="email" class="form-control" id="email" name="email" value="{{ old('email', $user->email) }}" required>
-          @error('email')
-            <div class="text-danger mt-2">{{ $message }}</div>
-          @enderror
-        </div>
-    
-        <div class="mb-3">
-          @if(!$user->hasVerifiedEmail())
-            <p>Your email is unverified. <a href="#" onclick="event.preventDefault(); document.getElementById('send-verification').submit();">Resend verification email</a></p> 
-            
-            <form id="send-verification" method="POST" action="{{ route('verification.send') }}">
-                 @csrf
+        <div class="card-body">
+            <h5 class="card-title">Update your account's profile information...</h5>
+            <form method="POST" action="{{ route('profile.update') }}">
+
+                @csrf
+                @method('patch')
+
+                <div class="mb-3">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name"
+                        value="{{ old('name', $user->name) }}" required>
+                    @error('name')
+                        <div class="text-danger mt-2">{{ $message }}</div>
+                    @enderror
+                </div>
+
+                <div class="mb-3">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email"
+                        value="{{ old('email', $user->email) }}" required>
+                    @error('email')
+                        <div class="text-danger mt-2">{{ $message }}</div>
+                    @enderror
+                </div>
+
+                <div class="mb-3">
+                    <label for="phone">Phone</label>
+                    <input type="phone" class="form-control" id="phone" name="phone"
+                        value="{{ old('phone', $user->phone) }}" required>
+                    @error('phone')
+                        <div class="text-danger mt-2">{{ $message }}</div>
+                    @enderror
+                </div>
+
+                <div class="mb-3">
+                    <label for="address">Address</label>
+                    <input type="address" class="form-control" id="address" name="address"
+                        value="{{ old('address', $user->address) }}" required>
+                    @error('address')
+                        <div class="text-danger mt-2">{{ $message }}</div>
+                    @enderror
+                </div>
+
+
+                <button class="btn btn-warning">Save</button>
+
+                @if (session('status') === 'profile-updated')
+                    <p class="text-muted mt-2" x-data="{ show: true }" x-show="show" x-transition
+                        x-init="setTimeout(() => show = false, 2000)">Saved.</p>
+                @endif
+
             </form>
-    
-            @if (session('status') === 'verification-link-sent')
-              <p class="text-success">Verification email sent!</p>
-            @endif
-          @endif
         </div>
-    
-        <button class="btn btn-warning">Save</button>
-    
-        @if (session('status') === 'profile-updated')
-          <p class="text-muted mt-2" x-data="{ show: true }" x-show="show" x-transition x-init="setTimeout(() => show = false, 2000)">Saved.</p>
-        @endif
-      
-      </form>
     </div>
-  </div>
-  </section>
+</section>
 
 {{-- Tailwind --}}
 {{-- <section>
@@ -84,7 +92,7 @@
             <x-text-input id="email" name="email" type="email" class="mt-1 block w-full" :value="old('email', $user->email)" required autocomplete="username" />
             <x-input-error class="mt-2" :messages="$errors->get('email')" />
 
-            @if ($user instanceof \Illuminate\Contracts\Auth\MustVerifyEmail && ! $user->hasVerifiedEmail())
+            @if ($user instanceof \Illuminate\Contracts\Auth\MustVerifyEmail && !$user->hasVerifiedEmail())
                 <div>
                     <p class="text-sm mt-2 text-gray-800">
                         {{ __('Your email address is unverified.') }}
