@@ -12,7 +12,7 @@
                 <li class="nav-item"><a class="nav-link text-dark" href="#pricing">Pricing</a></li>
                 <li class="nav-item"><a class="nav-link text-dark" href="#booking">Booking</a></li>
                 <li class="nav-item"><a class="nav-link text-dark" href="#contact">Contact</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="{{ route('reservations') }}">Booking</a></li>
+                {{-- <li class="nav-item"><a class="nav-link text-dark" href="{{ route('reservations') }}">Booking</a></li> --}}
 
 
 
@@ -52,7 +52,8 @@
                         </li>
                     @else
                         <li class="nav-item">
-                            <a class=" ps-4 pt-1 pb- 1 pe-4 btn btn-warning" href="{{ route('login') }}">Pesan Sekarang
+                            <a class=" ps-4 pt-1 pb- 1 pe-4 btn btn-warning" href="{{ route('reservations') }}">Pesan
+                                Sekarang
                                 !</a>
                         </li>
                     @endauth

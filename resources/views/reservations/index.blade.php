@@ -33,7 +33,7 @@
                                                 </p>
                                                 <input required type="radio" class="text-center" name="product_id"
                                                     value="{{ $product->id }}" id="basic{{ $product->id }}"
-                                                    {{ old('product_id') == $product->id ? 'checked' : '' }}>
+                                                    {{ old('product_id') == $product->id || $product->id == $selectedProduct ? 'checked' : '' }}>
                                             </div>
 
                                         </label>

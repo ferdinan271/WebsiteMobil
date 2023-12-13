@@ -41,3 +41,11 @@ function ConfirmDelete(email){
     return result;
   })
 }
+
+function featureMaintenance(){
+  Swal.fire({
+    icon: "error",
+    title: "Oops...",
+    text: "Fitur ini sedang dalam pengembangan!",
+  });
+}

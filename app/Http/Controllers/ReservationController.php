@@ -36,7 +36,7 @@ class ReservationController extends Controller
     //     ]);
     // }
 
-    public function index()
+    public function index($selectedProduct = null)
     {
         $timeList = [
             "08:00",
@@ -53,6 +53,7 @@ class ReservationController extends Controller
             'monthlyProducts' => Product::where('category', 'Monthly')->orderBy('price', 'asc')->get(),
             'dailyProducts' => Product::where('category', 'Daily')->orderBy('price', 'asc')->get(),
             'times' => $timeList,
+            'selectedProduct' => $selectedProduct,
         ]);
     }
 

@@ -26,7 +26,7 @@ Route::get('/index', function () {
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/reservations', [ReservationController::class, 'index'])->name('reservations');
+Route::get('/reservations/{selectedProduct?}', [ReservationController::class, 'index'])->name('reservations');
 Route::post('/reservations/store', [ReservationController::class, 'store'])->name('reservations.store');
 
 Route::middleware('auth')->group(function () {

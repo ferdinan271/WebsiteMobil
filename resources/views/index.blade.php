@@ -3,12 +3,13 @@
         <div class="container px-4 px-lg-5 h-100">
             <div class="row gx-4 gx-lg-5 h-100 align-items-star justify-content-star text-star">
                 <div class="col-lg-8 align-self-end">
-                    <h1 class="text-dark fw-bold">Cuci dan Salon Mobil <br>Panggilan Profesional</h1><br>
+                    <h1 class="text-dark fw-bold">WashWizz</h1><br>
                 </div>
                 <div class="col-lg-6 align-self-baseline">
-                    <p class="text-dark-75 mb-5">Tunggu di rumah saja, jasa cuci dan salon mobil panggilan kami siap
-                        membersihkan mobil Anda kapanpun dibutuhkan.</p>
-                    <a class="btn btn-lg  text-white" style="background-color: #f4623a" href="#about">Pelajari Lebih
+                    <p class="text-dark-75 mb-5">Layanan Cuci dan Salon Mobil Professional. Siap Hadirkan Kilau yang
+                        Mengagumkan
+                        untuk Kendaraan Anda.</p>
+                    <a class="btn btn-lg  text-white" style="background-color: #f4623a" href="#services">Pelajari Lebih
                         Lanjut</a>
                 </div>
             </div>
@@ -20,7 +21,7 @@
         <div class="container px-4 px-lg-5">
             <div class="row d-flex justify-content-center">
                 <div class="col-md-8">
-                    <h2 class="text-center mt-0 d-flex justify-content-center">Sekarang, cuci mobil di rumah lebih mudah
+                    <h2 class="text-center mt-0 d-flex justify-content-center">Sekarang, cuci mobil lebih mudah
                         dengan layanan berlangganan dari WashWizz</h2>
                     <hr class="divider" />
                     <img src="../img/mobil-cling.jpg" alt="">
@@ -164,7 +165,9 @@
                                     <ul>
                                         {{ $product->description }}
                                     </ul>
-                                    <a href="#" class="buy-btn">Pesan Sekarang</a>
+                                    {{-- <a href="{{ route('reservations', $product->id) }}" onclick="featureMaintenance()" class="buy-btn">Pesan --}}
+                                    <a href="# " onclick="featureMaintenance()" class="buy-btn">Pesan
+                                        Sekarang</a>
                                 </div>
                             </div>
                         @endforeach
@@ -193,7 +196,8 @@
                                     <ul>
                                         {{ $product->description }}
                                     </ul>
-                                    <a href="#" class="buy-btn">Pesan Sekarang</a>
+                                    <a href="{{ route('reservations', $product->id) }}" class="buy-btn">Pesan
+                                        Sekarang</a>
                                 </div>
                             </div>
                         @endforeach
@@ -313,53 +317,19 @@
                 </div>
                 <div class="col-xl-8">
                     <div class="contact-form-wrapper">
-                        <div class="row">
-                            <div class="col-xl-10 col-lg-8 mx-auto">
-                                <div class="section-title text-center mb-50">
-                                    <h1 class="fw-bold text-warning">Get in Touch</h1>
-                                    <h2 class="fw-bold">Ready to Get Started</h2>
-                                    <p>At vero eos et accusamus et iusto odio
-                                        dignissimos ducimus quiblanditiis praesentium</p>
-                                </div>
-                            </div>
-                        </div>
-                        <form action="assets/php/mail.php" class="contact-form">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <input type="text" name="name" id="name" placeholder="Name" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="email" name="email" id="email" placeholder="Email"
-                                        required>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <input type="text" name="phone" id="phone" placeholder="Phone"
-                                        required>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="text" name="subject" id="email" placeholder="Subject"
-                                        required>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <textarea name="message" id="message" placeholder="Type Message" rows="5"></textarea>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="button text-center">
-                                        <button type="submit" class="theme-btn bg-warning text-dark">Send
-                                            Message</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+                        <h1>Lokasi Kami</h1>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31610.97004350068!2d112.5794249743164!3d-7.960530899999991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e788281bdd08839%3A0xc915f268bffa831f!2sUniversitas%20Negeri%20Malang!5e0!3m2!1sid!2sid!4v1702409452632!5m2!1sid!2sid"
+                            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="floating-action-button">
+            <a href="https://wa.me/6287779113478" target="_blank" class="btn btn-success">
+                <i class="fab fa-whatsapp"></i> Hubungi kami
+            </a>
         </div>
     </section>
 </x-app-layout>
