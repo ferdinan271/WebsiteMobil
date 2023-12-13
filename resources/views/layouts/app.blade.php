@@ -21,7 +21,7 @@
        
     </head>
     <body>
-        <div class="btn btn-success btn-floating">Konsultasi Gratis <i class="fa-solid fa-square-phone fa-beat"></i></div>
+        <div class="btn btn-success btn-floating">Hubungi Kami<i class="fab fa-whatsapp fa-beat"></i></div>
             @include('layouts.navigation')
             @if (session('success'))
         <script>

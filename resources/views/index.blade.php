@@ -326,10 +326,10 @@
                 </div>
             </div>
         </div>
-        <div class="floating-action-button">
+        {{-- <div class="floating-action-button">
             <a href="https://wa.me/6287779113478" target="_blank" class="btn btn-success">
                 <i class="fab fa-whatsapp"></i> Hubungi kami
             </a>
-        </div>
+        </div> --}}
     </section>
 </x-app-layout>

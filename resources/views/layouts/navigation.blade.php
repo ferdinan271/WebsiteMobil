@@ -27,7 +27,7 @@
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
 
                                 <li><a class="dropdown-item"
-                                        href="{{ route('reservations') }}">{{ __('Pesan Sekarang') }}</a></li>
+                                        href="{{ route('dashboard') }}">{{ __('Dashboard Admin') }}</a></li>
 
                                 <li><a class="dropdown-item" href="{{ route('profile.edit') }}">{{ __('Profile') }}</a></li>
 
