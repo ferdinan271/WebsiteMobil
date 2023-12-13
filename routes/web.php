@@ -26,7 +26,7 @@ Route::get('/form-pendaftaran', function () {
 
 Route::get('/terima-kasih', function () {
     return view('completeform');
-});
+})->name('terima-kasih');
 Route::get('/dashboard', function () {
     return view('dashboard');
 });

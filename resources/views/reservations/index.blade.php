@@ -61,7 +61,8 @@
                                         <input required type="phone" class="form-control" id="phone"
                                             name="phone" placeholder="08XXXXXXXXXX" value={{ old('phone') }}>
                                         @error('phone')
-                                            <div class="text-danger" style="font-size: 14px">{{ $errors->get('phone') }}
+                                            <div class="text-danger" style="font-size: 14px">
+                                                {{ implode(', ', $errors->get('phone')) }}
                                             </div>
                                         @enderror
                                     </div>
@@ -135,7 +136,7 @@
                                         </select>
                                         @error('reservation_time')
                                             <div class="text-danger" style="font-size: 14px">
-                                                {{ $errors->get('reservation_time') }}</div>
+                                                {{ implode(', ', $errors->get('reservation_time')) }}</div>
                                         @enderror
                                     </div>
                                 </div>

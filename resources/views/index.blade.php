@@ -189,7 +189,7 @@
                     <hr class="divider divider-light" />
                     <div class="row d-flex justify-content-center">
                         @foreach ($dailyProducts as $product)
-                            <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+                            <div class="col-lg-4 mt-4 mt-lg-4" data-aos="fade-up" data-aos-delay="300">
                                 <div class="box featured">
                                     <h3>{{ $product->title }}</h3>
                                     <h4><sup>Rp</sup>{{ number_format($product->price, 0, ',', '.') }}</h4>

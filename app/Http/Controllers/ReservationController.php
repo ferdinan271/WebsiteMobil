@@ -62,7 +62,7 @@ class ReservationController extends Controller
         $validated = $request->validate(
             [
                 'name' => 'required',
-                'phone' => 'required',
+                'phone' => 'required|regex:/^\+?[0-9]{8,15}$/',
                 'merk' => 'required',
                 'type' => 'required',
                 'plate_number' => 'required',
@@ -77,7 +77,7 @@ class ReservationController extends Controller
         $reservation = Reservation::create($validated);
         if ($reservation) {
             session()->flash('success', 'Reservation Success!');
-            return redirect()->route('home');
+            return redirect()->route('terima-kasih');
         }
         session()->flash('error', 'Failed to create reservation!');
 

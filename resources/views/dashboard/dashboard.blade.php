@@ -13,6 +13,34 @@
 @section('content')
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-4">
+                <!-- Total Waiting List Card -->
+                <div class="bg-white p-4 shadow-md rounded-lg flex items-center">
+                    <i class="fas fa-clock text-yellow-500 text-3xl mr-4"></i>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-1">Menunggu Konfirmasi</h3>
+                        <p class="text-gray-600">{{ $waiting }}</p>
+                    </div>
+                </div>
+
+                <!-- Total Antrian (Queue) Card -->
+                <div class="bg-white p-4 shadow-md rounded-lg flex items-center">
+                    <i class="fas fa-users text-green-500 text-3xl mr-4"></i>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-1">Total Antrian</h3>
+                        <p class="text-gray-600">{{ $antrian }}</p>
+                    </div>
+                </div>
+
+                <!-- Total Income Card -->
+                <div class="bg-white p-4 shadow-md rounded-lg flex items-center">
+                    <i class="fas fa-money-bill-wave text-blue-500 text-3xl mr-4"></i>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-1">Total Income</h3>
+                        <p class="text-gray-600">Rp{{ number_format($income, 0) }}</p>
+                    </div>
+                </div>
+            </div>
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 ">
                     <table data-theme="light" id="reservationsTable" class="display min-w-full divide-y divide-gray-200"
