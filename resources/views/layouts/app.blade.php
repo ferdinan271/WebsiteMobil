@@ -15,13 +15,14 @@
          <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Scripts -->
 
+        <link rel="stylesheet" href="{{ asset('css/additional.css') }}">
         <link rel="stylesheet" href="{{ asset('css/swal.css') }}">
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="{{ asset('js/swal.js') }}"></script>
        
     </head>
     <body>
-        <div class="btn btn-success btn-floating">Hubungi Kami<i class="fab fa-whatsapp fa-beat"></i></div>
+        <div class="btn btn-success btn-floating">Hubungi Kami <i class="fab fa-whatsapp fa-beat"></i></div>
             @include('layouts.navigation')
             @if (session('success'))
         <script>
@@ -68,18 +69,18 @@
 
     <script>
         $('.owl-carousel').owlCarousel({
-    loop:true,
+    loop:false ,
     margin:10,
     nav:true,
     responsive:{
         0:{
-            items:1
+            items:4
         },
         600:{
-            items:3
+            items:4
         },
         1000:{
-            items:5
+            items:4
                 }
             }
         })

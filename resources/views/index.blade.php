@@ -3,9 +3,10 @@
         <div class="container px-4 px-lg-5 h-100">
             <div class="row gx-4 gx-lg-5 h-100 align-items-star justify-content-star text-star">
                 <div class="col-lg-8 align-self-end">
-                    <h1 class="text-dark fw-bold">WashWizz</h1><br>
+                    <h1 class="text-dark fw-bold"><span id="auto-type"></span></h1><br>
                 </div>
                 <div class="col-lg-6 align-self-baseline">
+                    
                     <p class="text-dark-75 mb-5">Layanan Cuci dan Salon Mobil Professional. Siap Hadirkan Kilau yang
                         Mengagumkan
                         untuk Kendaraan Anda.</p>
@@ -17,46 +18,41 @@
     </header>
 
     <!-- Services-->
-    <section class="page-section" id="services">
+    <section class="page-section" id="services" >
         <div class="container px-4 px-lg-5">
             <div class="row d-flex justify-content-center">
-                <div class="col-md-8">
-                    <h2 class="text-center mt-0 d-flex justify-content-center">Sekarang, cuci mobil lebih mudah
-                        dengan layanan berlangganan dari WashWizz</h2>
-                    <hr class="divider" />
-                    <img src="../img/mobil-cling.jpg" alt="">
+                <div class="col-lg-8">
+                        <h2 class="text-center  d-flex justify-content-center "data-aos="fade-right" data-aos-duration="600">Sekarang, cuci mobil di rumah lebih mudah dengan layanan berlangganan dari MobilClean</h2>
+                        <hr class="divider" />
+                    <img class="col-xl-12" src="../img/mobil-cling.jpg" alt="" data-aos="fade-left" data-aos-duration="600">
                 </div>
             </div>
-            <div class="row gx-4 gx-lg-5 flex justify-center">
+            <div class="row gx-4 gx-lg-5" data-aos="fade-up" >
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
-                        <div class="mb-2"><img style="width: 50px" src="../img/icont/ico-protection.png"
-                                alt=""></div>
+                        <div class="mb-2"><img style="width: 50px" src="../img/icont/ico-protection.png" alt=""></div>
                         <h3 class="h4 mb-2">Keamanan Mobil Terjaga</h3>
                         <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="200">
                     <div class="mt-5">
-                        <div class="mb-2"><img style="width: 50px" src="../img/icont/ico-water.png" alt="">
-                        </div>
+                        <div class="mb-2"><img style="width: 50px" src="../img/icont/ico-water.png" alt=""></div>
                         <h3 class="h4 mb-2">Shampo / Sabun Premium</h3>
                         <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-3 col-md-6 text-center"data-aos="fade-up"data-aos-delay="400">
                     <div class="mt-5">
-                        <div class="mb-2"><img style="width: 50px" src="../img/icont/ico-fast.png" alt="">
-                        </div>
+                        <div class="mb-2"><img style="width: 50px" src="../img/icont/ico-fast.png" alt=""></div>
                         <h3 class="h4 mb-2">Cepat Tanpa Repot Antri</h3>
                         <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-3 col-md-6 text-center"data-aos="fade-up"data-aos-delay="600">
                     <div class="mt-5">
-                        <div class="mb-2"><img style="width: 50px" src="../img/icont/ico-cal.png" alt="">
-                        </div>
-                        <h3 class="h4 mb-2">Bebas Atur Jadwal </h3>
+                        <div class="mb-2"><img style="width: 50px" src="../img/icont/ico-cal.png" alt=""></div>
+                        <h3 class="h4 mb-2">Bebas Atur Jadwal   </h3>
                         <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
                     </div>
                 </div>
@@ -69,114 +65,105 @@
     <section>
         <div id="portfolio">
             <div class="container ">
-                <div class="container-fluid ">
-                    <div class="row">
-                        <div class="col text-center" style="margin-bottom: 3rem">
-                            <h1>Portfolio </h1>
-                        </div>
+            <div class="container-fluid  ">
+                <div class="row">
+                    <div class="col text-center" style="margin-bottom: 3rem">
+                        <h1 data-aos="zoom-in">Portfolio Section</h1>
                     </div>
-                    <div class="row g-0">
-                        <div class="col-lg-4 col-sm-6">
-                            <a class="portfolio-box" href=../img/portfolio/fullsize/1.jpg" title="Project Name">
-                                <img class="img-fluid" src="../img/portfolio/thumbnails/1.jpg" alt="..." />
-                                <div class="portfolio-box-caption">
-                                    <div class="project-category text-white-50">Category</div>
-                                    <div class="project-name">Pembersihan secara menyeluruh</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <a class="portfolio-box" href="../img/portfolio/fullsize/2.jpg" title="Project Name">
-                                <img class="img-fluid" src="../img/portfolio/thumbnails/2.jpg" alt="..." />
-                                <div class="portfolio-box-caption">
-                                    <div class="project-category text-white-50">Category</div>
-                                    <div class="project-name">Hasil rapih dan bersih</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <a class="portfolio-box" href="../img/portfolio/fullsize/3.jpg" title="Project Name">
-                                <img class="img-fluid" src="../img/portfolio/thumbnails/3.jpg" alt="..." />
-                                <div class="portfolio-box-caption">
-                                    <div class="project-category text-white-50">Category</div>
-                                    <div class="project-name">Interior di bersihkan dengan teliti</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <a class="portfolio-box" href="../img/portfolio/fullsize/4.jpg" title="Project Name">
-                                <img class="img-fluid" src="../img/portfolio/thumbnails/4.jpg" alt="..." />
-                                <div class="portfolio-box-caption">
-                                    <div class="project-category text-white-50">Category</div>
-                                    <div class="project-name">Pembersihan velg secara berkala</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <a class="portfolio-box" href="../img/portfolio/fullsize/5.jpg" title="Project Name">
-                                <img class="img-fluid" src="../img/portfolio/thumbnails/5.jpg" alt="..." />
-                                <div class="portfolio-box-caption">
-                                    <div class="project-category text-white-50">Category</div>
-                                    <div class="project-name">Tanpa takut Lama </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <a class="portfolio-box" href="../img/portfolio/fullsize/6.jpg" title="Project Name">
-                                <img class="img-fluid" src="../img/portfolio/thumbnails/6.jpg" alt="..." />
-                                <div class="portfolio-box-caption p-3">
-                                    <div class="project-category text-white-50">Category</div>
-                                    <div class="project-name">Mesin akan di bersihkan </div>
-                                </div>
-                            </a>
-                        </div>
+                </div>
+                <div class="row ">
+                    <div class="col-lg-4 col-sm-6 pb-4"data-aos-duration="600"data-aos="zoom-in" >
+                        <a class="portfolio-box " href=../img/portfolio/fullsize/1.jpg title="Cuci Mobil">
+                            <img class="img-fluid" src="../img/portfolio/thumbnails/1.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Cuci Mobil</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6"data-aos="zoom-in"data-aos-duration="600"data-aos-delay="200">
+                        <a class="portfolio-box" href="../img/portfolio/fullsize/2.jpg" title="Salon Mobil Eksterior">
+                            <img class="img-fluid" src="../img/portfolio/thumbnails/2.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Salon Mobil Eksterior</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6"data-aos="zoom-in"data-aos-duration="600"data-aos-delay="300">
+                        <a class="portfolio-box" href="../img/portfolio/fullsize/3.jpg" title="Salon Mobil Interior">
+                            <img class="img-fluid" src="../img/portfolio/thumbnails/3.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Salon Mobil Interior</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6"data-aos="zoom-in"data-aos-duration="600"data-aos-delay="400">
+                        <a class="portfolio-box" href="../img/portfolio/fullsize/4.jpg" title="Salon Mobil Ban & Velg">
+                            <img class="img-fluid" src="../img/portfolio/thumbnails/4.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Salon Mobil Ban & Velg</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6"data-aos="zoom-in"data-aos-duration="600"data-aos-delay="500">
+                        <a class="portfolio-box" href="../img/portfolio/fullsize/5.jpg" title="Salon Mobil Kaca">
+                            <img class="img-fluid" src="../img/portfolio/thumbnails/5.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Salon Mobil Kaca</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6"data-aos="zoom-in" data-aos-duration="600"data-aos-delay="600">
+                        <a class="portfolio-box" href="../img/portfolio/fullsize/6.jpg" title="Salon Mobil Mesin">
+                            <img class="img-fluid" src="../img/portfolio/thumbnails/6.jpg" alt="..." />
+                            <div class="portfolio-box-caption p-3">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Salon Mobil Mesin</div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+        </div>
+</section>
     <!-- Akhir Portfolio-->
 
     <!-- About-->
     <section id="pricing" class="pt-5 pb-5" style="background-color: #f4623a ;">
         <div class="container pricing px-4 px-lg-5 ">
             <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg text-center">
-                    <h2 class="text-white mt-0">Paket Cuci Mobil Berlangganan</h2>
+                <div class="col-xl-12 text-center">
+                    <h2 class="text-white ">Paket Cuci Mobil Berlangganan</h2>
+                </div>
                     <hr class="divider divider-light" />
-                    <div class="row d-flex justify-content-center mt-0">
+                    <div class="row d-flex justify-content-center ">
+
+                        <div class="owl-carousel owl-theme">
                         @foreach ($monthlyProducts as $product)
-                            {{-- <div class="col-lg-2">
-                                <div class="card mt-3 rounded-5 about-wrapper">
-                                    <div class="card-body " style="background-color: #f8ede7; border-radius:25px; ">
-                                        <h5 class="card-title mb-3 fw-bold">{{ $product->title }}</h5>
-                                        <p class="card-text">{{ $product->description }}
-                                        </p>
-                                        <p class="card-text">Harga per bulan</p>
-                                        <h5 class="card-title"> Rp{{ number_format($product->price, 0, ',', '.') }}
-                                        </h5>
+                            <div class="item d-flex justify-content-center">
+
+                                <div data-aos="fade-up" data-aos-delay="300">
+                                    <div class="box featured ">
+                                        <h3>{{ $product->title }}</h3>
+                                        <h4><sup>Rp</sup>{{ number_format($product->price, 0, ',', '.') }}</h4>
+                                        <ul>
+                                            {{ $product->description }}
+                                        </ul>
+                                    
+                                        <a href="# " onclick="featureMaintenance()" class="buy-btn">Pesan
+                                            Sekarang</a>
                                     </div>
-                                </div>
-                            </div> --}}
-                            <div class="col-lg-4 mt-4 mt-lg-4" data-aos="fade-up" data-aos-delay="300">
-                                <div class="box featured">
-                                    <h3>{{ $product->title }}</h3>
-                                    <h4><sup>Rp</sup>{{ number_format($product->price, 0, ',', '.') }}</h4>
-                                    <ul>
-                                        {{ $product->description }}
-                                    </ul>
-                                    {{-- <a href="{{ route('reservations', $product->id) }}" onclick="featureMaintenance()" class="buy-btn">Pesan --}}
-                                    <a href="# " onclick="featureMaintenance()" class="buy-btn">Pesan
-                                        Sekarang</a>
                                 </div>
                             </div>
                         @endforeach
+                        </div>
                     </div>
-                    {{-- <div class="row">
-                    <div class="col">
-                        <div class="btn btn-warning mt-5 btn-lg about-wrapper"> Pesan Sekarang !</div>
-                    </div>
-                </div> --}}
+            
                 </div>
             </div>
         </div>
@@ -188,19 +175,24 @@
                     <h2 class="text-orange mt-0">Layanan Sekali Cuci</h2>
                     <hr class="divider divider-light" />
                     <div class="row d-flex justify-content-center">
-                        @foreach ($dailyProducts as $product)
-                            <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-                                <div class="box featured">
-                                    <h3>{{ $product->title }}</h3>
-                                    <h4><sup>Rp</sup>{{ number_format($product->price, 0, ',', '.') }}</h4>
-                                    <ul>
-                                        {{ $product->description }}
-                                    </ul>
-                                    <a href="{{ route('reservations', $product->id) }}" class="buy-btn">Pesan
-                                        Sekarang</a>
+
+                        <div class="owl-carousel owl-theme ">
+                            @foreach ($dailyProducts as $product)
+                            <div class="item d-flex justify-content-center">
+                                <div  data-aos="fade-up" data-aos-delay="300">
+                                    <div class="box featured ">
+                                        <h3>{{ $product->title }}</h3>
+                                        <h4><sup>Rp</sup>{{ number_format($product->price, 0, ',', '.') }}</h4>
+                                        <ul>
+                                            {{ $product->description }}
+                                        </ul>
+                                        <a href="{{ route('reservations', $product->id) }}" class="buy-btn">Pesan
+                                            Sekarang</a>
+                                    </div>
                                 </div>
                             </div>
-                        @endforeach
+                            @endforeach
+                        </div>
                     </div>
                 </div>
             </div>
@@ -315,7 +307,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-8">
+                <div class="col-md-8">
                     <div class="contact-form-wrapper ">
                         <h1>Lokasi Kami</h1>
                         <iframe
