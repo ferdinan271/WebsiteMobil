@@ -75,7 +75,7 @@
 {{-- type script --}}
 <script>
     var typed = new Typed("#auto-type", {
-        strings: ["Cuci dan Salon Mobil <br> Panggilan Profesional"],
+        strings: ["Cuci dan Salon Mobil <br>  Profesional"],
         typeSpeed: 30,
 
         loop: true,
@@ -84,18 +84,18 @@
 
 <script>
     $('.owl-carousel').owlCarousel({
-        loop: true,
+        loop: false,
         margin: 10,
         nav: true,
         responsive: {
             0: {
-                items: 1
+                items: 4
             },
             600: {
-                items: 3
+                items: 4
             },
             1000: {
-                items: 5
+                items: 4
             }
         }
     })

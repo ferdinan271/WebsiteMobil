@@ -30,9 +30,6 @@ Route::get('/terima-kasih', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
-// Route::get('/', function () {
-//     return view('dashboard');
-// });
 Route::get('/index', function () {
     return redirect('/');
 })->name('index');

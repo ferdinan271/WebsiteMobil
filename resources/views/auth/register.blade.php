@@ -23,10 +23,11 @@
             <x-text-input id="password" class="form-control form-control-lg bg-light fs-6 mb-3"
                             type="password"
                             name="password"
+                            id="Password"
                             required autocomplete="new-password" 
                             placeholder="Masukan Password"/>
 
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
+          
         </div>
 
         <!-- Confirm Password -->
@@ -34,21 +35,25 @@
 
             <x-text-input id="password_confirmation" class="form-control form-control-lg bg-light fs-6 mb-3"
                             type="password"
+                            id="ConfirmPassword"
                             name="password_confirmation" required autocomplete="new-password" 
                             placeholder="Confrim Password"/>
-
+            <x-input-error :messages="$errors->get('password')" class="mt-2" />
             <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
+                <p  id="CheckPasswordMatch"></p>
         </div>
-
+        
+        
         <x-primary-button >
             {{ __('Register') }}
         </x-primary-button>
 
         <div class="d-flex justify-content-center mt-2">
-            <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
+            <a  href="{{ route('login') }}">
                 {{ __('Sudah Memiliki Akun ?') }}
             </a>
 
         </div>
     </form>
+    
 </x-guest-layout>
